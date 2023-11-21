@@ -4,7 +4,6 @@ require 'database.php';
 
 // Use the $database object to perform database operations
 $data = $database->select('orders', '*');
-
 ?>
 
 <!DOCTYPE html>
@@ -43,16 +42,29 @@ $data = $database->select('orders', '*');
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Bestelling ID</th>
-                    <th scope="col">Naam</th>
-                    <th scope="col">Emailadres</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Besteldatum</th>
-                    <th scope="col">Bekijk order</th>
+                    <th>Bestelling ID</th>
+                    <th>Naam</th>
+                    <th>Emailadres</th>
+                    <th>Status</th>
+                    <th>Besteldatum</th>
+                    <th>Bekijk order</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Voor later -->
+                <!-- foreach loopje voor de rows -->
+                <?php
+                foreach ($data as $order)
+                echo "
+                <tr>
+                    <th>{$order['id']}</th>
+                    <td>{$order['name']}</td>   
+                    <td>{$order['email']}</td>   
+                    <td>{$order['status']}</td>   
+                    <td>{$order['created']}</td> 
+                    <td><a href='/'><button class='btn btn-primary'>👁</button></a></td>  
+                </tr>
+                "
+                ?>
             </tbody>
         </table>
 
