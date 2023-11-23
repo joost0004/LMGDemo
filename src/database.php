@@ -1,7 +1,6 @@
 <?php
-
 // include Medoo
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 use Medoo\Medoo;
 
 // Configure database
