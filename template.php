@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Bestellingen Overzicht</title>
+    <title>LMG Demo Site</title>
 </head>
 
 <body>
@@ -20,32 +19,18 @@
                     transform="translate(-1399 -3959.711)" />
             </svg>
         </a>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
         <p class="lead font-weight-bold">
             <a href="mailto: joostb.photo@gmail.com" class="link-dark">Let's talk!</a>
         </p>
     </nav>
 
     <div class="container mt-4">
-        <!-- Header -->
-        <h1>Bestellingen Overzicht</h1>
-        <p>Dit is een overzicht van alle bestellingen.</p>
 
-        <!-- Tabel met bestellingen -->
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Bestelling ID</th>
-                    <th scope="col">Naam</th>
-                    <th scope="col">Emailadres</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Besteldatum</th>
-                    <th scope="col">Bekijk order</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Voor later -->
-            </tbody>
-        </table>
+        <!-- Main section -->
+        <?php echo $pageContent; ?>
 
     </div>
 

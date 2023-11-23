@@ -1,9 +1,10 @@
 <?php
 
+// include Medoo
 require 'vendor/autoload.php';
-
 use Medoo\Medoo;
 
+// Configure database
 $database = new Medoo([
     'database_type' => 'mysql',
     'database_name' => 'lmg',
