@@ -7,7 +7,7 @@
     "build": "npx swc ./src/js -o ./build/app.js",
     "watch": "npx swc ./src/js -o ./build/app.js -w",
     "build-sass": "npx sass ./src/scss/style.scss ./build/css/style.css",
-    "watch-sass": "npx sass ./src/scss/style.scss ./build/css/style.css"
+    "watch-sass": "npx sass ./src/scss/style.scss ./build/css/style.css -w"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.63",

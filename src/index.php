@@ -5,6 +5,11 @@ require 'database.php';
 // Get all orders and store in variable
 $data = $database->select('orders', '*');
 
+// set breadcrumbs
+$breadcrumbs = [
+    ['url' => 'index.php', 'label' => 'Home'],
+];
+
 $pageContent = "
 <!-- Header -->
 <h1>Bestellingen Overzicht</h1>

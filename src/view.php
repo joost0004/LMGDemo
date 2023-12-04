@@ -28,6 +28,13 @@ function GetStatus($status) {
             return 'bg-secondary text-white';
 }};
 
+// set breadcrumbs   
+$breadcrumbs = [
+    ['url' => 'index.php', 'label' => 'Home'],
+    ['url' => 'index.php', 'label' => 'Orders'],
+    ['url' => '#', 'label' => $order['name']], // current page
+];
+
 // HTML for the page
 $pageContent = "
 <!-- Header -->

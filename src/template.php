@@ -19,9 +19,16 @@
                     transform="translate(-1399 -3959.711)" />
             </svg>
         </a>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <?php
+                foreach ($breadcrumbs as $breadcrumb) {
+                    echo "<li class='breadcrumb-item'><a href='{$breadcrumb['url']}'>{$breadcrumb['label']}</a></li>";
+                }
+                ?>
+            </ol>
+        </nav>
         <p class="lead font-weight-bold">
             <a href="mailto: joostb.photo@gmail.com" class="link-dark">Let's talk!</a>
         </p>
